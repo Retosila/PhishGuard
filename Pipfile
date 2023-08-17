@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+toml = "==0.10.2"
+colorlog = "==6.7.0"
+flask = "==2.3.2"
+webdriver-manager = "==4.0.0"
+selenium = "==4.11.2"
+requests = "==2.31.0"
+flask-cors = "==4.0.0"
+selenium-stealth = "==1.0.6"
+tldextract = "==3.4.4"
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"
+python_full_version = "3.11.4"

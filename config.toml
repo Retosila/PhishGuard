@@ -1,0 +1,33 @@
+###### Logger ######
+# 로거 설정 정보
+[logger]
+level = "DEBUG" # DEBUG > INFO > WARN > ERROR
+handler = ["stream", "file"]
+filepath = "/var/log/safechecker/"
+
+
+##### API Server #####
+# Flask 관련 설정 정보
+[server]
+host = "0.0.0.0"
+port = 9900
+url_prefix = "/api/v1"
+allowed_origins = ["*"]
+use_debug_mode = true
+user_reloader = false
+name = "checker"
+
+
+##### URL Checker ####
+# URL 검사기 API 관련 설정 정보
+[checker.url.phishtank]
+endpoint = "https://checkurl.phishtank.com/checkurl/"
+username = "YOUR_USER_NAME"
+
+[checker.url.whoxy]
+endpoint = "https://api.whoxy.com/"
+api_key = "YOUR_API_KEY"
+
+[checker.url.kisa]
+endpoint = "http://apis.data.go.kr/B551505/whois/domain_name"
+service_key = "YOUR_SERVICE_KEY"
